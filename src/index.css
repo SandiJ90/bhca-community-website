@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+:root {
+  font-family: Inter, system-ui, sans-serif;
+
+  --bhca-orange: #ff914d;
+  --bhca-purple: #5e17eb;
+  --bhca-dark: #171717;
+  --bhca-light: #faf8ff;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: var(--bhca-dark);
+}
