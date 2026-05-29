@@ -9,6 +9,7 @@ import Volunteer from "../src/pages/Volunteer";
 import Contact from "../src/pages/Contact";
 import Gallery from "./pages/Gallery";
 import UsefulInformation from "./pages/UsefulInformation";
+import NewsArticle from "./pages/NewsArticle";
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/useful-information" element={<UsefulInformation />} />
+          <Route path="/news/:slug" element={<NewsArticle />} />
           </Routes>
       </MainLayout>
     </BrowserRouter>

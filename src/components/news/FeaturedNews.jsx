@@ -28,9 +28,9 @@ export default function FeaturedNews({ article }) {
           {article.description}
         </p>
 
-        <Button to="/news" variant="primary">
-          Read more
-        </Button>
+       <Button to={`/news/${article.slug}`} variant="primary">
+  Read more
+</Button>
       </div>
     </article>
   );

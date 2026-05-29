@@ -24,9 +24,9 @@ export default function NewsCard({ article }) {
           {article.description}
         </p>
 
-        <Button to="/news" variant="outline" className="px-5 py-3">
-          Read more
-        </Button>
+        <Button to={`/news/${article.slug}`} variant="outline" className="px-5 py-3">
+  Read more
+</Button>
       </div>
     </article>
   );

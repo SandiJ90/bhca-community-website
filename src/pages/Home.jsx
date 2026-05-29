@@ -9,6 +9,7 @@ import NewsletterSection from "../components/home/NewsletterSection";
 import SupportSection from "../components/home/SupportSection";
 import PartnersSection from "../components/home/PartnersSection";
 import UsefulInfoSection from "../components/home/UsefulInfoSection";
+import FeaturedNewsSection from "../components/home/FeaturedNewsSection";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <PartnersSection />
       <EventsSection />
       <VolunteerSection />
+      <FeaturedNewsSection />
       <ActionPlanSection />
       <GallerySection />
       <UsefulInfoSection/>

@@ -123,9 +123,8 @@ export default function EventsSection() {
           </div>
 
           <div className="grid gap-4 md:grid-cols-3">
-            {localEvents
-  .filter((event) => event.showOnHome)
-  .sort((a, b) => a.homeOrder - b.homeOrder)
+           {[...localEvents]
+  .sort(() => Math.random() - 0.5)
   .slice(0, 3)
   .map((event) => (
               <div
