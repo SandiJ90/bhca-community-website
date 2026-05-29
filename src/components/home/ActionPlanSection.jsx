@@ -2,7 +2,7 @@ import Button from "../ui/Button";
 import { actionPlan } from "../../data/actionPlanData";
 
 const featuredPriority = actionPlan.find((item) => item.featured);
-const otherPriorities = actionPlan.filter((item) => !item.featured);
+const otherPriorities = actionPlan.filter((item) => !item.featured).slice(0, 3);
 
 export default function ActionPlanSection() {
   return (
@@ -14,13 +14,12 @@ export default function ActionPlanSection() {
           </span>
 
           <h2 className="mb-6 text-4xl font-black leading-tight text-[#171717] md:text-5xl">
-            Building long-term improvements together
+            Turning resident concerns into action
           </h2>
 
           <p className="text-lg leading-relaxed text-gray-600">
-            Our action plan focuses on the priorities that matter most to local
-            residents — helping create a cleaner, safer and more connected
-            Beeston Hill.
+            Our Community Action Plan was created from local resident feedback
+            and sets clear targets for the council, police and local partners.
           </p>
         </div>
 
@@ -38,15 +37,19 @@ export default function ActionPlanSection() {
               {featuredPriority.title}
             </h3>
 
-            <p className="max-w-3xl text-lg leading-relaxed text-white/80">
+            <p className="mb-6 max-w-3xl text-lg leading-relaxed text-white/80">
               {featuredPriority.description}
+            </p>
+
+            <p className="font-bold text-[#ff914d]">
+              Target: {featuredPriority.target}
             </p>
           </div>
         )}
 
         <div className="grid gap-8 md:grid-cols-3">
           {otherPriorities.map((item) => (
-            <div
+            <article
               key={item.id}
               className="rounded-3xl bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
             >
@@ -62,15 +65,22 @@ export default function ActionPlanSection() {
                 {item.title}
               </h3>
 
-              <p className="leading-relaxed text-gray-600">
+              <p className="mb-6 leading-relaxed text-gray-600">
                 {item.description}
               </p>
-            </div>
+
+              <p className="text-sm font-bold text-[#5e17eb]">
+                Target: {item.target}
+              </p>
+            </article>
           ))}
         </div>
 
         <div className="mt-16 flex flex-wrap gap-4">
-          <Button to="/action-plan">Read the Action Plan</Button>
+          <Button to="/action-plan" variant="primary">
+            Read the Action Plan
+          </Button>
+
           <Button to="/contact" variant="outline">
             Share your priorities
           </Button>

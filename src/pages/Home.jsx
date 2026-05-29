@@ -7,6 +7,8 @@ import ActionPlanSection from "../components/home/ActionPlanSection";
 import GallerySection from "../components/home/GallerySection";
 import NewsletterSection from "../components/home/NewsletterSection";
 import SupportSection from "../components/home/SupportSection";
+import PartnersSection from "../components/home/PartnersSection";
+import UsefulInfoSection from "../components/home/UsefulInfoSection";
 
 export default function Home() {
   return (
@@ -14,10 +16,12 @@ export default function Home() {
       <HeroSection />
       <IntroStrip />
       <AboutSection />
+      <PartnersSection />
       <EventsSection />
       <VolunteerSection />
       <ActionPlanSection />
       <GallerySection />
+      <UsefulInfoSection/>
       <SupportSection />
       <NewsletterSection />
     </>

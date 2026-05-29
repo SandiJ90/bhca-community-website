@@ -22,13 +22,23 @@ export default function EventCard({ event }) {
           </span>
         </div>
 
-        <h3 className="mb-3 text-2xl font-black text-[#171717]">
+        <h3 className="mb-2 text-2xl font-black text-[#171717]">
           {event.title}
         </h3>
+
+        {event.organiser && (
+          <p className="mb-4 text-sm font-bold text-[#5e17eb]">
+            Organised by {event.organiser}
+          </p>
+        )}
 
         <p className="mb-6 leading-relaxed text-gray-600">
           {event.description}
         </p>
+
+        <div className="mb-6 text-sm font-semibold text-gray-500">
+          {event.location}
+        </div>
 
         <Button to="/events" variant="outline" className="px-5 py-3">
           Find out more

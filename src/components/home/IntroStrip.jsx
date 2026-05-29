@@ -7,7 +7,7 @@ const introItems = [
   {
     label: "Events",
     title: "Bringing people together",
-    text: "Community meetings, activities, volunteering and local events throughout the year.",
+    text: "Community meetings, events, volunteering opportunities and local projects throughout the year.",
   },
   {
     label: "Action",

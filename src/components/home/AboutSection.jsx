@@ -13,16 +13,22 @@ export default function AboutSection() {
             Supporting local people and community action
           </h2>
 
-          <p className="mb-6 text-lg leading-relaxed text-gray-600">
-            We are a resident-led community organisation helping bring people
-            together through local events, activities, volunteering and
-            community projects.
-          </p>
+  <p className="mb-6 text-lg leading-relaxed text-gray-600">
+  At Beeston Hill Community Association, we bring people together to create a
+  stronger, more connected neighbourhood.
+</p>
 
-          <p className="text-lg leading-relaxed text-gray-600">
-            Our aim is to create a stronger, safer and more connected Beeston
-            Hill for everyone.
-          </p>
+<p className="mb-6 text-lg leading-relaxed text-gray-600">
+  We believe local people should have a strong voice in shaping the future of
+  the community. Through community meetings, events, local projects and
+  partnerships, we support residents, build community cohesion and create
+  opportunities for people to connect and make a positive difference locally.
+</p>
+
+<p className="text-lg leading-relaxed text-gray-600">
+  Join us for events, sign up for updates or volunteer with BHCA — every
+  contribution helps build a stronger community.
+</p>
         </div>
 
         <div className="grid gap-6 sm:grid-cols-2">
@@ -36,9 +42,9 @@ export default function AboutSection() {
 
           <div className="rounded-3xl border border-orange-100 bg-orange-50 p-8">
             <Heart className="mb-4 h-10 w-10 text-[#ff914d]" />
-            <h3 className="mb-2 text-xl font-bold">Inclusive</h3>
+            <h3 className="mb-2 text-xl font-bold">Community cohesion</h3>
             <p className="text-gray-600">
-              Bringing together people of all ages and backgrounds.
+Bringing people of all ages and backgrounds together to build a stronger, more connected community.
             </p>
           </div>
 

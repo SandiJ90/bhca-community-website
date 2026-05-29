@@ -10,7 +10,7 @@ export default function Footer() {
           <img
             src="/logos/TEXT_LOGO.png"
             alt="Beeston Hill Community Association"
-            className="mb-6 h-14 w-auto"
+            className="mb-6 h-20 w-auto"
           />
 
           <p className="max-w-md leading-relaxed text-white/80">
@@ -59,6 +59,12 @@ export default function Footer() {
             >
               Contact
             </Link>
+            <Link
+  to="/useful-information"
+  className="transition hover:text-[#ff914d]"
+>
+  Useful Information
+</Link>
           </div>
         </div>
 

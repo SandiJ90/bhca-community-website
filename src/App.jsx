@@ -8,6 +8,7 @@ import ActionPlan from "../src/pages/ActionPlan";
 import Volunteer from "../src/pages/Volunteer";
 import Contact from "../src/pages/Contact";
 import Gallery from "./pages/Gallery";
+import UsefulInformation from "./pages/UsefulInformation";
 
 export default function App() {
   return (
@@ -21,7 +22,8 @@ export default function App() {
           <Route path="/volunteer" element={<Volunteer />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/gallery" element={<Gallery />} />
-        </Routes>
+          <Route path="/useful-information" element={<UsefulInformation />} />
+          </Routes>
       </MainLayout>
     </BrowserRouter>
   );

@@ -23,7 +23,10 @@ export default function GallerySection() {
         </div>
 
         <div className="grid gap-5 md:grid-cols-4 md:grid-rows-2">
-          {featuredGalleryImages.slice(0, 5).map((image, index) => (
+          {featuredGalleryImages
+  .sort((a, b) => a.order - b.order)
+  .slice(0, 5)
+  .map((image, index) => (
             <div
               key={image.id}
               className={`overflow-hidden rounded-[2rem] ${

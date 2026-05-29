@@ -3,6 +3,7 @@ import Button from "../ui/Button";
 export default function FeaturedEvent({ event }) {
   return (
     <div className="overflow-hidden rounded-[2rem] bg-white shadow-xl md:grid md:grid-cols-2">
+      {/* IMAGE */}
       <div className="relative min-h-[340px]">
         <img
           src={event.image}
@@ -15,14 +16,21 @@ export default function FeaturedEvent({ event }) {
         </div>
       </div>
 
+      {/* CONTENT */}
       <div className="flex flex-col justify-center p-8 md:p-12">
         <div className="mb-4 text-sm font-bold text-[#ff914d]">
           {event.date} • {event.location}
         </div>
 
-        <h2 className="mb-5 text-3xl font-black text-[#171717] md:text-4xl">
+        <h2 className="mb-3 text-3xl font-black text-[#171717] md:text-4xl">
           {event.title}
         </h2>
+
+        {event.organiser && (
+          <p className="mb-5 text-sm font-bold text-[#5e17eb]">
+            Organised by {event.organiser}
+          </p>
+        )}
 
         <p className="mb-8 text-lg leading-relaxed text-gray-600">
           {event.description}
@@ -33,7 +41,10 @@ export default function FeaturedEvent({ event }) {
             View event details
           </Button>
 
-          <Button href="https://forms.gle/HdPxKtQfXRHJ3AH17" variant="outline">
+          <Button
+            href="https://forms.gle/HdPxKtQfXRHJ3AH17"
+            variant="outline"
+          >
             Volunteer to help
           </Button>
         </div>

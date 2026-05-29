@@ -25,9 +25,9 @@ export default function EventsSection() {
           </h2>
 
           <p className="mx-auto max-w-2xl text-lg text-gray-600">
-            BHCA-led events first, plus other local activities we think
-            residents may want to know about.
-          </p>
+  Community events, local activities and opportunities to bring people together
+  across Beeston Hill.
+</p>
         </div>
 
         {featuredEvent && (
@@ -123,7 +123,11 @@ export default function EventsSection() {
           </div>
 
           <div className="grid gap-4 md:grid-cols-3">
-            {localEvents.map((event) => (
+            {localEvents
+  .filter((event) => event.showOnHome)
+  .sort((a, b) => a.homeOrder - b.homeOrder)
+  .slice(0, 3)
+  .map((event) => (
               <div
                 key={event.id}
                 className="rounded-2xl border border-gray-100 bg-[#faf8ff] p-5"

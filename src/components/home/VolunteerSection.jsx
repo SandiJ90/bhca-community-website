@@ -47,9 +47,9 @@ export default function VolunteerSection() {
           {/* IMAGE */}
           <div className="relative min-h-[360px]">
             <img
-              src="/images/volunteer.jpg"
+              src="/images/volunteer.jpeg"
               alt="BHCA volunteers and residents"
-              className="h-full w-full object-cover"
+              className="h-full w-full object-contain"
             />
 
             <div className="absolute bottom-6 left-6 right-6 rounded-3xl bg-[#ff914d] p-6 text-white shadow-xl">
